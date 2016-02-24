@@ -1,0 +1,61 @@
+<header class="panel-cover {{#if post}}panel-cover--collapsed{{/if}}"
+  {{#if @blog.cover}}style="background: transparent;)"
+  {{/if}}>
+  
+  <div class="panel-main">
+
+     <div class="panel-main__inner panel-inverted">
+     
+     <div class="panel-aside__main">
+          <div id="nav-toggle"  class="panel-aside__flag"><span></span>
+         </div>
+         <div class="panel-aside__content">
+           <ul>
+             <li><a href="/alltags"><i class="fa fa-tags fa-2x"></i></a><span>所有标签</span></li>
+             <li><a href="/moods"><i class="fa fa-heart fa-2x"></i></a><span>晒心情</span></li>
+             <li><a href="/lovefontend"><i class="fa fa-star fa-2x"></i></a><span>大前端</span></li>
+             <li><a href="/thumbs-up"><i class="fa fa-thumbs-up fa-2x"></i></a><span>棒棒滴</span></li>
+           </ul>
+         </div>
+     </div>
+    
+    <div class="panel-main__content">
+        <div id="mylogo" class="mylogo">
+          <ul id="scene" class="scene">
+              <li class="layer" data-depth="1.00">
+              <a href="/#blog">  
+                      <div class="panel-cover__logo logo moon"></div>
+              </a>
+              </li>
+
+          </ul>
+        </div>
+        
+        <h1 class="panel-cover__title panel-title"><a href="http://careytoboo.github.io/careytoboo" title="前往 {{@blog.title}} 的主页">{{@blog.title}}</a></h1>
+        <span class="panel-cover__subtitle panel-subtitle">梦存于心，功成于行</span>
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">IMPOSSIBLE OR I'M POSSIBLE  UP TO YOU  </p> <!--@blog.description-->
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button" data-info="goto-index">首页</a></li>
+              <li class="navigation__item"><a href="https://github.com/pjmnb007" target="_blank" title="我的项目">项目</a></li>
+              <li class="navigation__item"><a href="http://careytoboo.github.io/careytoboo" target="_blank" title="了解更多关于我">关于</a></li>
+              <li class="navigation__item"><a href="/rss" title="邮件订阅本站" target="_blank">订阅</a></li>
+            </ul>
+          </nav>
+          </div>
+          <div>
+          {{> social}}
+          </div>
+        </div>
+
+      </div>
+    </div> 
+  </div>
+    <canvas  id="start-fash"  style="background-image: url(http://7xqkjn.com1.z0.glb.clouddn.com/introduce_bg.jpg)"></canvas>
+</header>
+
