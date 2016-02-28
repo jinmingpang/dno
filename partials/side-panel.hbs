@@ -1,6 +1,4 @@
-<header class="panel-cover {{#if post}}panel-cover--collapsed{{/if}}"
-  {{#if @blog.cover}}style="background: transparent;)"
-  {{/if}}>
+<header class="panel-cover {{#if post}}panel-cover--collapsed{{/if}}">
   
   <div class="panel-main">
 
@@ -24,7 +22,9 @@
           <ul id="scene" class="scene">
               <li class="layer" data-depth="1.00">
               <a href="/#blog">  
-                      <div class="panel-cover__logo logo moon"></div>
+                      <div class="panel-cover__logo logo moon" 
+                      {{#if @blog.cover}} style="background-image:url({{@blog.logo}});" {{/if}}>
+                      </div>
               </a>
               </li>
 
@@ -34,7 +34,10 @@
         <h1 class="panel-cover__title panel-title"><a href="http://careytoboo.github.io/careytoboo" title="前往 {{@blog.title}} 的主页">{{@blog.title}}</a></h1>
         <span class="panel-cover__subtitle panel-subtitle">梦存于心，功成于行</span>
         <hr class="panel-cover__divider" />
-        <p class="panel-cover__description">IMPOSSIBLE OR I'M POSSIBLE  UP TO YOU  </p> <!--@blog.description-->
+        {{#if @blog.description}}
+            <p class="panel-cover__description">{{@blog.description}}</p>
+        {{/if}}
+        <!-- <p class="panel-cover__description">IMPOSSIBLE OR I'M POSSIBLE  UP TO YOU  </p> -->
         <hr class="panel-cover__divider panel-cover__divider--secondary" />
 
         <div class="navigation-wrapper">
@@ -56,6 +59,6 @@
       </div>
     </div> 
   </div>
-    <canvas  id="start-fash"  style="background-image: url(http://7xqkjn.com1.z0.glb.clouddn.com/introduce_bg.jpg)"></canvas>
+    <canvas  id="start-fash"   {{#if @blog.cover}} style="background-image: url({{@blog.cover}});" {{/if}} ></canvas>
 </header>
 

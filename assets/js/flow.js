@@ -311,7 +311,7 @@ $('body').on('click',function(e){
 				posts_holder.show();
 				$('div.content-wrapper>div[data-info="post-detail"]').hide();
 				$(document).scrollTop(waterfall.scrollTop);
-				
+				$('video').remove(); // 清除video 标签
 			}
 		}else if(data_info==='thumbs'){
 			var commend=t_obj.find('i');

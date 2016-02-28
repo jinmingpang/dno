@@ -1,6 +1,10 @@
 {{!< default}}
 
 <div id="markflagstart"></div>
+<!-- videojs html5视频插件 -->
+<link href="{{asset "css/video-js.min.css"}}" rel="stylesheet">
+<script src="{{asset "js/videojs-ie8.min.js"}}"></script>
+<script src="{{asset "js/video.min.js"}}"></script>
 {{#post}}
 
   <article class="post-container post-container--single">
@@ -26,6 +30,7 @@
   </article>
   
   {{> read-more}}
+  {{> comments}}
 
 {{/post}}
 <div id="markflagend"></div>

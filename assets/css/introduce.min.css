@@ -131,7 +131,8 @@ img{border:0 none;}
 
 
 #waterfall{ text-align:center; width:100%; margin:-1rem  auto 0px;}
-
+#start-fash{background-image: url("http://7xqkjn.com1.z0.glb.clouddn.com/introduce_bg.jpg");
+background-repeat: no-repeat;background-size: cover;background-position: center center;}
 #waterfall .cell{
   padding:0px; 
 
