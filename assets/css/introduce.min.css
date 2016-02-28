@@ -18,8 +18,10 @@
   width: 5rem !important;
   z-index: 2;
 }
-
-.panel-main a:hover,.panel-main a:visited{
+.panel-main a:link,
+.panel-main a:active,
+.panel-main a:hover,
+.panel-main a:visited{
 	color:#fff !important;
 }
 .panel-main .panel-title{

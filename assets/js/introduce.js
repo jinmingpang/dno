@@ -4,14 +4,14 @@
 
     // Main
     if(!IsPC()) {
-      
             $('.panel-aside__main').hide();
-            
             //return;
       }
+      dno_config_init();
      initHeader();
      initAnimation();
      addListeners();
+     
     function initHeader() {
         width = $(".panel-cover").width();
         height =  $(".panel-cover").height();
@@ -399,6 +399,60 @@
      }    
      return flag;    
   }  
-   
+function dno_config_init(){
+  var cof=$.isPlainObject(dno_config) ? dno_config : {} ,
+        m_nav= $.isPlainObject(cof.mini_navbar ) ? cof.mini_navbar : {},
+        s_panel=$.isPlainObject(cof.side_panel ) ? cof.side_panel : {},
+        nav_btns=$.isArray(m_nav.btns) ?  m_nav.btns : [],
+        p_txt_btns=$.isArray(s_panel.txt_btns) ?  s_panel.txt_btns : [],
+        p_icon_btns=$.isArray(s_panel.img_btns) ?  s_panel.img_btns : [],
+        items='';
+
+        if(m_nav.color){
+          $('.panel-aside__flag').css('backgroundColor',m_nav.color);
+        }
+        if(nav_btns){
+          items+='<ul>';
+          $.each(nav_btns,function(index,item){
+            items+=' <li><a href="'+item.url+'"><i class="fa fa-'+item.icon+' fa-2x"></i></a><span style="display:none;">'+item.tip_str+'</span></li>';
+          });
+          items+='</ul>';
+          $('.panel-aside__content').html(items);
+        }
+        if(s_panel.logo_url){
+          $('.logo.moon').css({'background-image':'url('+s_panel.logo_url+')'});
+        }
+        if(s_panel.main_title){
+          $('.panel-cover__title').html(s_panel.main_title);
+        }
+        if(s_panel.sub_title){
+          $('.panel-cover__subtitle').html(s_panel.sub_title);
+        }
+        if(s_panel.description){
+          $('.panel-cover__description').html(s_panel.description);
+        }
+        if(p_txt_btns){
+          items='<ul  class="navigation">';
+          items+=' <li class="navigation__item"><a href="#/blog" title="首页" class="blog-button" data-info="goto-index">首页</a></li>';
+          $.each(p_txt_btns,function(index,item){
+            items+=' <li class="navigation__item"><a href="'+item.url+'" title="'+item.text+'" class="blog-button" target="_blank">'+item.text+'</a></li>';
+          });
+          items+='</ul>';
+          $('.cover-navigation--primary').html(items);
+        }
+        if(p_icon_btns){
+          items='<ul  class="navigation">';
+          $.each(p_icon_btns,function(index,item){
+            items+=' <li class="navigation__item">'+
+                    '<a href="'+item.url+'" title="'+item.title+'" target="_blank">'+
+                        '<i class="social fa fa-'+item.icon+' fa-2x"></i>'+
+                        '<span class="label">'+item.text+'</span>'+
+                    '</a>'+
+              '</li>';
+          });
+          items+='</ul>';
+          $('.navigation--social').html(items);
+        } 
+}
 
 })();

@@ -229,6 +229,7 @@ var opt={
   auto_imgHeight:true,
   insert_type:1
 };
+
 $(window).unbind('.infscr');
 $('#waterfall').infinitescroll({
 	    navSelector  : "nav[role='navigation']",   // 页面分页元素(成功后会被隐藏)
@@ -339,7 +340,7 @@ $('body').on('click',function(e){
 		e.stopPropagation();
 		return false; 
 	}
-
 });
+
 
 })(jQuery);
