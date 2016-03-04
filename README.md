@@ -1,3 +1,5 @@
+Brief
+
 I am a 90, a front-end engineer. I always want to have a unique blog, to record some articles. So I chose the ghsot blog, and customized a personalized theme. Currently, dno is still in beta version. The next stage is to repair the existing bug, and make differentiated treatment for mobile devices. The goal is to create a generous and practical ghost theme. If you have any questions or suggestions, please contact me.
 
 Useage
