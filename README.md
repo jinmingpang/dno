@@ -13,7 +13,7 @@ I am a 90, a front-end engineer. I always want to have a unique blog, to record 
   * Modify the browser tab page icon. Replace the `dno/assets/images/favicon.png` with your favorite Icon.</br> (please keep the image name consistent .)
 * Go to enter the home page and refresh, view the results.</br>
 </br>
-#####GOOD LUCKY !
+GOOD LUCKY !
 
 #About Comments
 </br>
@@ -41,7 +41,7 @@ var disqus_shortname = ''; // required: replace example with your forum shortnam
 
 #关于评论
 </br>
-dno使用的国外的[Disqus](https://disqus.com/,'Disqus'),第三方评论插件。注册和使用都非常简单。你需要到官网注册一个账号，并申请一个短名。然后将自己的短名添加到`dno/partials/commtents.hbs` 中 `var disqus_shortname = '你的短名';` ,将`dno/partials/post.hbs`中的 {{!-- {{> comments}} --}} 的注释标签去掉。然后回到主页刷新，你就能够可以使用评论功能了。
+dno使用的是国外的[Disqus](https://disqus.com/,'Disqus'),第三方评论插件。注册和使用都非常简单。你需要到官网注册一个账号，并申请一个短名。然后将自己的短名添加到`dno/partials/commtents.hbs` 中 `var disqus_shortname = '你的短名';` ,将`dno/partials/post.hbs`中的 {{!-- {{> comments}} --}} 的注释标签去掉。然后回到主页刷新，你就能够可以使用评论功能了。
 
 
 
