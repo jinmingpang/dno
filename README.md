@@ -8,8 +8,8 @@ I am a 90, a front-end engineer. I always want to have a unique blog, to record 
 * Move the dno folder to `pathto/ghsot/content/thems/`</br>
 * Go to the ghost administrator console page.</br>
   * Global Settings > Theme Settings >  dno ( select dno ).</br>
-  * Insert Code > `copy congfig/dno_congfig.md` code to {{ghost_head}}, modify the information into yourself.</br>
-  * Insert Code > `copy congfig/dno_footer.md` code to {{ghost_foot}}, modify the information into yourself.</br>
+  * Insert Code > copy `congfig/dno_congfig.md's code` to {{ghost_head}}, modify the information into yourself.</br>
+  * Insert Code > copy `congfig/dno_footer.md's code` to {{ghost_foot}}, modify the information into yourself.</br>
   * Modify the browser tab page icon. Replace the `dno/assets/images/favicon.png` with your favorite Icon.</br> (please keep the image name consistent .)
 * Go to enter the home page and refresh, view the results.</br>
 </br>
@@ -17,9 +17,9 @@ GOOD LUCKY !
 
 #About Comments
 </br>
-You need to know your short name of [Disqus](https://disqus.com/,'Disqus'). Registering a Disqus account is very simple ,then apply for a short name.   Add it to disqus_shortname in comments.hbs and then replace the {{!-- {{> comments}} --}} with {{> comments}} in post.hbs to enable Disqus for your blog.
+You need to know your short name of [Disqus](https://disqus.com/,'Disqus'). Registering a Disqus account is very simple ,then apply for a short name.   Add it to disqus_shortname in `comments.hbs` and then replace the {{!-- {{> comments}} --}} with {{> comments}} in post.hbs to enable Disqus for your blog.
 </br>
-var disqus_shortname = ''; // required: replace example with your forum shortname
+`var disqus_shortname = '';` // required: replace example with your forum shortname
 </br>
 <hr>
 </br>
@@ -34,8 +34,8 @@ var disqus_shortname = ''; // required: replace example with your forum shortnam
 * 将dno文件夹移动到pathto/ghsot/content/thems/ 文件夹下
 * 进入ghost 管理员控制台页面 . 
   * 全局设置 > 设置主题 > 选中dno 主题。
-  * 插入代码 > 复制 `congfig/dno_congfig.md`代码 到 {{ghost_head}}，修改成自己的信息。
-  * 插入代码 > 复制 `congfig/dno_footer.md` 代码 到 {{ghost_foot}} ，修改成自己的信息 。
+  * 插入代码 > 复制 `congfig/dno_congfig.md`文件中代码到{{ghost_head}}，修改成自己的信息。
+  * 插入代码 > 复制 `congfig/dno_footer.md` 文件中代码到{{ghost_foot}} ，修改成自己的信息 。
   * 修改浏览器标签页图标，用你喜欢的图标替换 `dno/assets/images/favicon.png` （请保持图片名称一致）。
 * 进入首页并且刷新，查看结果</br>
 
