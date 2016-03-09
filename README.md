@@ -31,7 +31,7 @@ You need to know your short name of [Disqus](https://disqus.com/,'Disqus'). Regi
 #使用
 </br>
 * 使用 `git clone https://github.com/CareyToboo/dno.git` 命令，将项目克隆到本地
-* 将dno文件夹移动到pathto/ghsot/content/thems/ 文件夹下
+* 将dno文件夹移动到`pathto/ghsot/content/thems/`文件夹下
 * 进入ghost 管理员控制台页面 . 
   * 全局设置 > 设置主题 > 选中dno 主题。
   * 插入代码 > 复制 `congfig/dno_congfig.md`文件中代码到{{ghost_head}}，修改成自己的信息。
