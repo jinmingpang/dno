@@ -4,14 +4,14 @@ I am a 90, a front-end engineer. I always want to have a unique blog, to record 
 
 #Useage
 </br>
-1. Use `git clone https://github.com/CareyToboo/dno.git`  to clone the project to the local.</br>
-2. Move the dno folder to `pathto/ghsot/content/thems/`</br>
-3. Go to the ghost administrator console page.</br>
->>1). Global Settings > Theme Settings >  dno ( select dno ).</br>
->>2). Insert Code > `copy congfig/dno_congfig.md` code to {{ghost_head}}, modify the information into yourself.</br>
->>3). Insert Code > `copy congfig/dno_footer.md` code to {{ghost_foot}}, modify the information into yourself.</br>
->>4). Modify the browser tab page icon. Replace the `dno/assets/images/favicon.png` with your favorite Icon.</br> (please keep the image name consistent .)
-4. Go to enter the home page and refresh, view the results.</br>
+* Use `git clone https://github.com/CareyToboo/dno.git`  to clone the project to the local.</br>
+* Move the dno folder to `pathto/ghsot/content/thems/`</br>
+* Go to the ghost administrator console page.</br>
+  * Global Settings > Theme Settings >  dno ( select dno ).</br>
+  * Insert Code > `copy congfig/dno_congfig.md` code to {{ghost_head}}, modify the information into yourself.</br>
+  * Insert Code > `copy congfig/dno_footer.md` code to {{ghost_foot}}, modify the information into yourself.</br>
+  * Modify the browser tab page icon. Replace the `dno/assets/images/favicon.png` with your favorite Icon.</br> (please keep the image name consistent .)
+* Go to enter the home page and refresh, view the results.</br>
 </br>
 #####GOOD LUCKY !
 
@@ -30,14 +30,14 @@ var disqus_shortname = ''; // required: replace example with your forum shortnam
 
 #使用
 </br>
-1.使用 `git clone https://github.com/CareyToboo/dno.git` 命令，将项目克隆到本地</br>
-2.将dno文件夹移动到pathto/ghsot/content/thems/ 文件夹下</br>
-3.进入ghost 管理员控制台页面 . </br>
->> 1).全局设置 > 设置主题 > 选中dno 主题。</br>
->> 2).插入代码 > 复制 `congfig/dno_congfig.md`代码 到 {{ghost_head}}，修改成自己的信息。</br>
->> 3).插入代码 > 复制 `congfig/dno_footer.md` 代码 到 {{ghost_foot}} ，修改成自己的信息 。</br>
->> 4).修改浏览器标签页图标，用你喜欢的图标替换 `dno/assets/images/favicon.png` （请保持图片名称一致）。</br>
-4.进入首页并且刷新，查看结果</br>
+* 使用 `git clone https://github.com/CareyToboo/dno.git` 命令，将项目克隆到本地
+* 将dno文件夹移动到pathto/ghsot/content/thems/ 文件夹下
+* 进入ghost 管理员控制台页面 . 
+  * 全局设置 > 设置主题 > 选中dno 主题。
+  * 插入代码 > 复制 `congfig/dno_congfig.md`代码 到 {{ghost_head}}，修改成自己的信息。
+  * 插入代码 > 复制 `congfig/dno_footer.md` 代码 到 {{ghost_foot}} ，修改成自己的信息 。
+  * 修改浏览器标签页图标，用你喜欢的图标替换 `dno/assets/images/favicon.png` （请保持图片名称一致）。
+* 进入首页并且刷新，查看结果</br>
 
 #关于评论
 </br>
